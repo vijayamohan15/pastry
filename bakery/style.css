@@ -1,0 +1,380 @@
+* {
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Julee', cursive;
+
+  }
+  body{
+    width:100%;
+  }
+#navbar {
+    overflow: hidden;
+    background-color: #030000;
+    /* padding: 20px 10px;  */
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    z-index: 99;
+  }
+  
+  
+  #navbar a {
+    float: left;
+    color: gold;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight:600;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  
+  #navbar #logo img{
+    height:100px;
+    width:100px;
+  }
+  
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+ 
+  #navbar a.active {
+    background-color: black;
+    color: whitesmoke;
+  }
+  
+  
+  #navbar-right {
+    padding-top: 50px;
+    padding-right: 50px;
+    float: right;
+  }
+  /* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  .slideshow-container img{
+    width:100%;
+
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  .text h1{
+    font-size: 70px;
+    font-weight: 600;
+    text-align: left;
+    padding-left:30px;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .button {
+    background-color: gold;
+    border: none;
+    color: black;
+    border-radius: 25px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .button:hover{
+    opacity: 0.6;
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #ffffff;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+ #product1{
+    text-align: center;
+ }
+
+ #product1 .pro{
+    /* background-image: url(images/i1.avif); */
+    float:left;
+    width:25%;
+    height:350px;
+    background-color: black;
+    /* width:20%; */
+    min-width:200px;
+    padding:10px 12px;
+    border:1px solid black;
+ }
+ 
+ #product1 .pro img{
+    width:100%;
+    height:250px;
+    border-radius: 10px;
+ }
+ #product1 .pro .des span{
+    color:gold;
+ }
+ #product1 .pro .des{
+    color:whitesmoke;
+ }
+/* #product1{
+    display: flex;
+} */
+.column {
+    text-align: center;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height:300px;
+    color:whitesmoke;
+    
+  }
+
+  .column img{
+    height:250px;
+  }
+  
+  .column h2:hover{
+    text-decoration: underline;
+    color: gold;
+  }
+ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #footer .icon{
+    
+    border:1px solid gold;
+    border-radius: 50%;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  #footer{
+    display:flex;
+    padding-left:560px;
+    gap:10px;
+  }
+  .crown{
+    background-color: black;
+    text-align: center;
+    width:100%;
+  }
+  .crown img{
+    width:10%;
+    height:10%;
+  }
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#loader-img {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+    z-index: 1001;  
+    background-image: url('http://bedekodzic.pl/wp-content/uploads/2018/04/google.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    z-index: 1020;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: red;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    z-index: 1001;
+}
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: blue;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: yellow;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;  
+    background: #222;
+    z-index: 1000;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.loader-section.section-left {
+    left: 0
+}
+
+.loader-section.section-right {
+    right: 0
+}
+
+.panel_left {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: all .7s .3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all .7s .3s cubic-bezier(0.645, 0.045, 0.355, 1.000)
+}
+
+.panel_right {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all .7s .3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all .7s .3s cubic-bezier(0.645, 0.045, 0.355, 1.000)
+}
+
+.loaded-circle {
+    opacity: 0;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out
+}
+
+.loaded-img {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all .3s 1s ease-out;
+    transition: all .3s 1s ease-out
+}
